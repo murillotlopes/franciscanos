@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Franciscanos App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Marcellus&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="app-header">
+        <p class="kicker">Ordem Franciscana Secular</p>
+        <h1>Franciscanos</h1>
+        <p class="subtitle">Caminho de oração, fraternidade e formação no dia a dia.</p>
+      </header>
+
+      <nav class="menu" aria-label="Menu principal">
+        <button class="menu-item is-active" data-target="musicas">Músicas</button>
+        <button class="menu-item" data-target="formacao">Material Formativo</button>
+        <button class="menu-item" data-target="fraternidade">Fraternidade</button>
+        <button class="menu-item" data-target="perfil">Dados Pessoais</button>
+      </nav>
+
+      <main class="content">
+        <section id="musicas" class="panel is-visible" aria-live="polite">
+          <h2>Músicas Franciscanas</h2>
+          <p>Canções para oração pessoal, encontros fraternos e celebrações.</p>
+          <ul id="songs-list" class="card-list"></ul>
+        </section>
+
+        <section id="formacao" class="panel">
+          <h2>Material Formativo</h2>
+          <p>Textos e roteiros para aprofundar a espiritualidade franciscana.</p>
+          <ul id="formation-list" class="card-list"></ul>
+        </section>
+
+        <section id="fraternidade" class="panel">
+          <h2>Minha Fraternidade</h2>
+          <div id="fraternity-card" class="profile-card"></div>
+        </section>
+
+        <section id="perfil" class="panel">
+          <h2>Meus Dados</h2>
+          <div id="profile-card" class="profile-card"></div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
